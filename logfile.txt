@@ -1,18 +1,11 @@
-START RequestId: b127c0f6-7e15-4a1e-8b5c-18e6b17a6537 Version: $LATEST
-2023-04-24T11:45:46.132Z	b127c0f6-7e15-4a1e-8b5c-18e6b17a6537	INFO	Method ARN: arn:aws:execute-api:us-east-1:123456789012:1234567890/dev/GET/logger
-2023-04-24T11:45:46.139Z	b127c0f6-7e15-4a1e-8b5c-18e6b17a6537	INFO	Token fron event: Bearer e81a50b9
-2023-04-24T11:45:46.140Z	b127c0f6-7e15-4a1e-8b5c-18e6b17a6537	INFO	Log from lambda authorizer ...
-2023-04-24T11:45:46.140Z	b127c0f6-7e15-4a1e-8b5c-18e6b17a6537	INFO	El token:  Bearer e81a50b9
-END RequestId: b127c0f6-7e15-4a1e-8b5c-18e6b17a6537
-REPORT RequestId: b127c0f6-7e15-4a1e-8b5c-18e6b17a6537	Init Duration: 1.42 ms	Duration: 1228.57 ms	Billed Duration: 1229 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: 8e1c14ec-624e-4c20-879c-c604a56f8b40 Version: $LATEST
-2023-04-24T11:45:48.304Z	8e1c14ec-624e-4c20-879c-c604a56f8b40	INFO	You are authorizer
-END RequestId: 8e1c14ec-624e-4c20-879c-c604a56f8b40
-REPORT RequestId: 8e1c14ec-624e-4c20-879c-c604a56f8b40	Init Duration: 1.59 ms	Duration: 1260.05 ms	Billed Duration: 1261 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
-START RequestId: f3d2d4f7-325f-4c59-ac60-8a468cc59038 Version: $LATEST
-2023-04-24T11:45:53.920Z	f3d2d4f7-325f-4c59-ac60-8a468cc59038	INFO	Method ARN: arn:aws:execute-api:us-east-1:123456789012:1234567890/dev/GET/logger
-2023-04-24T11:45:53.926Z	f3d2d4f7-325f-4c59-ac60-8a468cc59038	INFO	Token fron event: Bearer e81a50b9ddd
-2023-04-24T11:45:53.927Z	f3d2d4f7-325f-4c59-ac60-8a468cc59038	INFO	Log from lambda authorizer ...
-2023-04-24T11:45:53.927Z	f3d2d4f7-325f-4c59-ac60-8a468cc59038	INFO	El token:  Bearer e81a50b9ddd
-END RequestId: f3d2d4f7-325f-4c59-ac60-8a468cc59038
-REPORT RequestId: f3d2d4f7-325f-4c59-ac60-8a468cc59038	Init Duration: 1.08 ms	Duration: 1229.08 ms	Billed Duration: 1230 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: c0bd0c4a-0722-4b82-8c68-d56c0b26d128 Version: $LATEST
+2023-04-24T13:05:22.621Z	c0bd0c4a-0722-4b82-8c68-d56c0b26d128	INFO	Method ARN: arn:aws:execute-api:us-east-1:123456789012:1234567890/dev/GET/logger
+2023-04-24T13:05:22.627Z	c0bd0c4a-0722-4b82-8c68-d56c0b26d128	INFO	Token fron event: Bearer e81a50b9
+2023-04-24T13:05:22.628Z	c0bd0c4a-0722-4b82-8c68-d56c0b26d128	INFO	Log from lambda authorizer ...
+2023-04-24T13:05:22.628Z	c0bd0c4a-0722-4b82-8c68-d56c0b26d128	INFO	El token:  Bearer e81a50b9
+END RequestId: c0bd0c4a-0722-4b82-8c68-d56c0b26d128
+REPORT RequestId: c0bd0c4a-0722-4b82-8c68-d56c0b26d128	Init Duration: 1.69 ms	Duration: 1523.58 ms	Billed Duration: 1524 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	
+START RequestId: 771e169a-e624-419b-84b2-47332568bcc9 Version: $LATEST
+2023-04-24T13:05:25.023Z	771e169a-e624-419b-84b2-47332568bcc9	INFO	You are authorizer
+END RequestId: 771e169a-e624-419b-84b2-47332568bcc9
+REPORT RequestId: 771e169a-e624-419b-84b2-47332568bcc9	Init Duration: 1.32 ms	Duration: 1484.84 ms	Billed Duration: 1485 ms	Memory Size: 128 MB	Max Memory Used: 128 MB	

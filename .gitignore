@@ -136,3 +136,4 @@ dist
 .aws-sam/cache
 .aws-sam/deps
 .aws-sam/build.toml
+logfile.txt
