@@ -1,0 +1,40 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Globals:
+  Function:
+    Timeout: 40
+
+Resources:
+  LoggerApi:
+    Type: AWS::Serverless::Api
+    Properties:
+      StageName: dev
+      Auth:
+        DefaultAuthorizer: JWTCustomAuthorizer
+        Authorizers:
+          JWTCustomAuthorizer:
+            FunctionPayloadType: TOKEN
+            FunctionArn: !GetAtt JWTAuthFunction.Arn
+
+  JWTAuthFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: authorizer.lambdaHandler
+      Runtime: nodejs18.x
+      CodeUri: .
+      Architectures:
+        - x86_64
+  LoggerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: handler.logger
+      Runtime: nodejs18.x
+      CodeUri: .
+      Events:
+        loggerEvent:
+          Type: Api # More info about API Event Source: https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#api
+          Properties:
+            RestApiId: !Ref LoggerApi
+            Path: /logger
+            Method: get   

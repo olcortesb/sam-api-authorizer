@@ -128,3 +128,11 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# AWS sam
+**/.aws-sam
+.aws-sam/*
+.aws-sam/build
+.aws-sam/cache
+.aws-sam/deps
+.aws-sam/build.toml
