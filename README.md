@@ -5,24 +5,26 @@ This is a demo for test the new AWS sam functionality.
 
 ## The files in the project:
 
-- template.yml: 
+- `template.yml`: 
 Have the defintions of infrastructure, Api, Lambda authorizer, and lambda logger.
 
-- autorizer.js
+- `autorizer.js`
 Have the code of validations of autorizer, is base on template of AWS lambda autorizer
 
-- handler.js
+- `handler.js`
 Is the code of lambda logger.
 
 ## Demo
 Requirements:
 - This new feature is avaliable from: aws sam `1.80.0+`
 - Update to new version:
+    - For another Os versions: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/manage-sam-cli-versions.html
 
 ```bash 
 sam --version
 # SAM CLI, version 1.76.0
 
+# For mac
 brew upgrade aws-sam-cli
 
 sam --version
@@ -80,6 +82,6 @@ REPORT RequestId: 771e169a-e624-419b-84b2-47332568bcc9	Init Duration: 1.32 ms	Du
 # References
 - AWS Sam Anouncenment: https://aws.amazon.com/es/about-aws/whats-new/2023/04/aws-sam-cli-local-testing-api-gateway-lambda-authorizers/
 - AWS Sam Authorizer docs: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/using-sam-cli-local-start-api.html#using-sam-cli-local-start-api-authorizers
-
+- https://aws.amazon.com/es/serverless/sam/ 
 
 
