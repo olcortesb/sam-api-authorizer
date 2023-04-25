@@ -1,9 +1,8 @@
 # sam-api-authorizer
-Demo for test new functionality of sam , local test of authorizers 
+Demo to test new functionality of  [AWS sam](https://aws.amazon.com/es/serverless/sam/): [local test of authorizers](https://aws.amazon.com/es/about-aws/whats-new/2023/04/). 
 
-This is a demo for test the new AWS sam functionality. 
 
-## The files in the project:
+## Important files in the project:
 
 - `template.yml`: 
 Have the defintions of infrastructure, Api, Lambda authorizer, and lambda logger.
@@ -18,8 +17,6 @@ Is the code of lambda logger.
 Requirements:
 - This new feature is avaliable from: aws sam `1.80.0+`
 - Update to new version:
-    - For another Os versions: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/manage-sam-cli-versions.html
-
 ```bash 
 sam --version
 # SAM CLI, version 1.76.0
@@ -30,18 +27,19 @@ brew upgrade aws-sam-cli
 sam --version
 # SAM CLI, version 1.81.0
 ```
+ - For another Operating system versions: https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/manage-sam-cli-versions.html
 
-For test local the authorizations api:
+Start the api:
 
 ```bash
 sam local start-api -p 3002 --log-file logfile.txt 
 ```
 - The `local` and `start api` command is for star the api.
 - `-p 3002` for start the server in this port
-- `--log-file` logfile.txt for log in this file similar to cloudWatch.
+- `--log-file` logfile.txt for log in this file similar to cloudWatch logs.
 
 Call the endpoint:
-Bad token for demo
+Bad reques token
 ````bash
 curl -X GET \
   'http://127.0.0.1:3002/logger' \
@@ -52,7 +50,7 @@ curl -X GET \
 #  "message": "User is not authorized to access this resource"
 #}
 ````
-Good token 
+Good request token 
 ````bash
 curl -X GET \
   'http://127.0.0.1:3002/logger' \
